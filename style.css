@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#topBackground {
+    width: 100%;
+}
+
+#bottomBackground {
+    width: 100%;
+}
