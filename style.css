@@ -69,12 +69,37 @@ body {
 #page h1 {
     font-weight: bold;
     font-size: 36px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     color: var(--purple);
+}
+
+#timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    
+}
+
+#page #timer > ul {
+    list-style-type: none;
+    margin: 10px;
+}
+
+#page #timer ul li:first-child {
+    color: var(--light-grey);
+    font-weight: 300;
+}
+
+#page #timer ul li:last-child {
+    font-size: 90px;
+    color: var(--black);
 }
 
 #page small {
     color: var(--text-color);
+    font-size: 15px;
 }
 
 #page a {
@@ -84,4 +109,10 @@ body {
     padding: 10px 30px;
     border-radius: 10px;
     cursor: pointer;
+}
+
+#page a:hover {
+    color: var(--purple);
+    background-color: white;
+    border: 3px solid var(--purple);
 }
