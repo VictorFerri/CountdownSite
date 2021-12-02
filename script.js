@@ -1,27 +1,12 @@
-// function startTimer(duration, display) {
-//     var timer = duration, hours, minutes, seconds;
+import { Countdown } from "./countdown.js";
 
-//     setInterval(function () {
-//         hours = parseInt(timer, 10);
-//         minutes = parseInt(timer / 60, 10);
-//         seconds = parseInt(timer % 60, 10);
+const tempoParaOWWB = new Countdown("13 August 2020 20:00:00 GMT-0300");
+const tempos = document.querySelectorAll("[data-time]");
 
-//         hours = hours < 10 ? "0" + hours : hours;
-//         minutes = minutes < 10 ? "0" + minutes : minutes;
-//         seconds = seconds < 10 ? "0" + seconds : seconds;
-
-//         display.textContent = hours + ":" + minutes + ":" + seconds;
-
-//         if(--timer < 0) {
-//             timer = duration
-//         }
-
-//     }, 1000)
-// }
-
-// window.onload = function() {
-//     var duration = 60 * 4;
-//     var display = document.querySelector("#timer");
-
-//     startTimer(duration, display);
-// }
+function mostrarTempo() {
+  tempos.forEach((tempo, index) => {
+    tempo.innerHTML = tempoParaOWWB.total[index];
+  });
+}
+mostrarTempo();
+setInterval(mostrarTempo, 1000);
