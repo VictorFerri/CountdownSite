@@ -1,7 +1,8 @@
-import { Countdown } from "./countdown.js";
+import Countdown from "./countdown.js";
 
-const tempoParaOWWB = new Countdown("13 August 2020 20:00:00 GMT-0300");
+const tempoParaOWWB = new Countdown("13 August 2022 20:00:00 GMT-0300");
 const tempos = document.querySelectorAll("[data-time]");
+console.log(tempoParaOWWB.total)
 
 function mostrarTempo() {
   tempos.forEach((tempo, index) => {
