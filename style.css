@@ -29,6 +29,7 @@ body {
     background-size: 100%;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 #bottomBackground {
@@ -44,34 +45,26 @@ body {
     z-index: -1;
 }
 
-.container {
-    display: flex;
-    margin: 0 auto;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-}
-
 .container > #page {
-    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container > img {
+.container img {
     width: 100%;
-    max-width: 757px;
     max-height: 900px;
+    max-width: 100%;
 }
 
 #page h1 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 36px;
     letter-spacing: 3px;
     color: var(--purple);
-    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.105em;
+    line-height: 54px;
 }
 
 #timer {
@@ -79,20 +72,22 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    
+    margin: 20px 0px;
 }
 
 #page #timer > ul {
     list-style-type: none;
     display: flex;
-    gap: 30px;
-    min-width: 400px;
+    width: 100%;
+    gap: 15px;
 }
 
 #page #timer ul li {
     color: var(--light-grey);
     font-weight: 300;
-    width: 20%;
+    min-width: 25%;
+    display: flex;
+    flex-direction: column;
 }
 
 #page #timer li > span {
@@ -105,17 +100,24 @@ body {
 #page small {
     color: var(--text-color);
     font-size: 15px;
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 21px;
 }
 
 #page a {
     background-color: var(--purple);
     color: white;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 32px;
     border-radius: 10px;
     cursor: pointer;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     transition: all 0.3s;
+    display: block;
+    max-width: fit-content;
+    margin: 0 auto;
 }
 
 #page a:hover {
