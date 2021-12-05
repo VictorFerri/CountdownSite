@@ -130,6 +130,7 @@ body {
     #page #timer li > span {
         font-size: 75px;
     }
+
 }
 
 @media (max-width: 990px) {
@@ -176,5 +177,11 @@ body {
         max-width: 200px;
         margin-right: auto;
         margin-left: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    #page #timer > ul {
+        gap: 15px;
     }
 }
