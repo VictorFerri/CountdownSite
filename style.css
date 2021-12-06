@@ -11,6 +11,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.srOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -105,7 +118,7 @@ body {
     line-height: 21px;
 }
 
-#page a {
+.button {
     background-color: var(--purple);
     color: white;
     text-decoration: none;
@@ -119,7 +132,7 @@ body {
     margin: 0 auto;
 }
 
-#page a:hover {
+.button:hover {
     color: var(--purple);
     background-color: white;
     border-color: var(--purple);
@@ -146,6 +159,35 @@ body {
 .modalOverlay.active {
     visibility: visible;
     opacity: 1;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.form {
+
+}
+
+.form .inputGroup {
+    padding-bottom: 10px;
+}
+
+.inputGroup > input{
+    padding: 0.4rem;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.form .button{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
 }
 
 @media (max-width: 1400px) {

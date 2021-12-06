@@ -12,10 +12,3 @@ function mostrarTempo() {
 
 mostrarTempo();
 setInterval(mostrarTempo, 1000);
-
-
-
-// document.getElementById('signUP').addEventListener('click', () => {
-//   console.log("rola")
-//   Modal.open()
-// })
