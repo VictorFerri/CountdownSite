@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 .srOnly {
@@ -163,24 +164,35 @@ body {
 
 .modal {
     background-color: white;
-    width: 90%;
+    width: 70%;
     max-width: 500px;
     padding: 1.5rem;
     border-radius: 15px;
+    box-shadow: 5px 10px 23px rgba(0, 0, 0, 0.5);
+    
+    position: relative;
 }
 
 .form {
+    max-width: 500px;
+}
 
+.form h1{
+    color: var(--purple);
+    padding-bottom: 20px;
 }
 
 .form .inputGroup {
+    max-width: 500px;
     padding-bottom: 10px;
 }
 
-.inputGroup > input{
-    padding: 0.4rem;
+input{
+    
     border-radius: 15px;
-    border: 2px solid black;
+    border: 2px solid var(--black);
+    padding: 0.5rem;
+    width: 100%;
 }
 
 .form .button{
