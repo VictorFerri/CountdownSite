@@ -94,9 +94,11 @@ body {
     list-style-type: none;
     display: flex;
     width: 100%;
+    gap: 20px;
+    justify-content: center;
 }
 
-#page #timer ul li {
+#page #timer ul li div {
     color: var(--light-grey);
     font-weight: 300;
     min-width: 25%;
@@ -104,7 +106,7 @@ body {
     flex-direction: column;
 }
 
-#page #timer li > span {
+#page #timer li div > span {
     font-size: 90px;
     color: var(--black);
     font-weight: 400;
@@ -204,7 +206,7 @@ input{
 }
 
 @media (max-width: 1400px) {
-    #page #timer li > span {
+    #page #timer li div > span {
         font-size: 75px;
     }
 
@@ -222,7 +224,7 @@ input{
 }
 
 @media (max-width: 600px) {
-    #page #timer li > span {
+    #page #timer li div > span {
         font-size: 50px;
     }
 }
@@ -246,7 +248,7 @@ input{
         flex-direction: column;
     }
 
-    #page #timer li > span {
+    #page #timer li div > span {
         font-size: 30px;
     }
 
@@ -266,7 +268,7 @@ input{
         line-height: 30px;
     }
     
-    #page #timer li > span {
+    #page #timer li div > span {
         font-size: 20px;
     }
 

@@ -1,6 +1,6 @@
 import Countdown from "./countdown.js";
 
-const tempoParaOWWB = new Countdown("10 March 2023 00:00:00 GMT-0300");
+const tempoParaOWWB = new Countdown("1 January 3000 00:00:00 GMT-0300");
 const tempos = document.querySelectorAll(".data-time");
 console.log(tempoParaOWWB.total)
 
