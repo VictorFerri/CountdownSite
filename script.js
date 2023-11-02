@@ -8,7 +8,10 @@ const day = date.getDate();
 const month = date.toLocaleString('en-US', { month: 'long' });
 const year = date.getFullYear();
 
-const tempoParaOWWB = new Countdown(`${day} ${month} ${year} 00:00:00 GMT-0300`);
+
+console.log(`${day} ${month} ${year} 00:00:00 GMT-0300`);
+
+const tempoParaOWWB = new Countdown(`${day} ${month} ${year} 00:00:00 GMT-0000`);
 
 function showTime() {
   tempos.forEach((tempo, index) => {
